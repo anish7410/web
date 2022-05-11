@@ -1,0 +1,89 @@
+<html>
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3869667620695205"
+     crossorigin="anonymous"></script>
+<title>HOME</title>
+<link rel = "icon" href ="name.png" type = "image/x-icon">
+<link rel="stylesheet" href="****">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-image:url("bgimg.jpeg");
+  background-size:cover;
+}
+
+a{
+  
+  font-weight:bold;
+  font-family:"times new roman";
+  color:white;
+	font-size:20px;
+}
+
+b{
+	font-family:"times new roman";
+	font-size:50;
+	color:#E7D5B4;
+}
+
+input[type=text]{
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=password] {
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.error {
+  color: #FF0000;
+  font-size:20;
+
+}
+input[type=submit]{
+  font-size:20;
+  background: #B9DFFF;
+  border: 1px  ;
+  border-radius: 30px;
+  box-shadow:2px 2px 3px;
+}
+input[type=submit]:hover{
+  background: #E75050;
+  border: 1px ;
+  border-radius:30px;
+  cursor:pointer;
+}
+.login{
+  width:350px;
+  box-shadow:0 0 15px 0 rgba(207,46,46,0.6);
+  border-radius:10px;
+  background:rgba(207, 46, 46,0.7);
+  padding:20px;
+  margin:8% auto 0;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ <div class="login"> 
+<h1>LOGIN PAGE</h1>
+<br>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<a>Name:</a> <input type="text" name="name" placeholder="username..."><br><BR>
+<a>Password:</a> <input type="password" name="pass" placeholder="password...."><br>
+<span class="error"> <?php echo $z;?></span>
+<br><BR><BR>
+  <a style="text-decoration:none" ><font color="green" >login</font></a>
+</form>
+<br><br>
+<a style="text-decoration:none" ><font color="green" >SIGNUP</font></a>
+</div>
+</body>
+</html>
