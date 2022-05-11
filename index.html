@@ -75,7 +75,8 @@ input[type=submit]:hover{
  <div class="login"> 
 <h1>LOGIN PAGE</h1>
 <br>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post">
+#Interactive page only avilable to verified users
 <a>Name:</a> <input type="text" name="name" placeholder="username..."><br><BR>
 <a>Password:</a> <input type="password" name="pass" placeholder="password...."><br>
 <span class="error"> <?php echo $z;?></span>
